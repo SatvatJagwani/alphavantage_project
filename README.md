@@ -9,9 +9,8 @@ This script assumes that there is a folder alphavantage_data/ which contains fil
 
 visualize_stock_prices_queries.py:
 This python script plots the query frequency and daily price variation for a group of stocks. One plot is generated for all the stock frequencies of all the stocks but n different plots are generated for prices of n different stock symbols.
-In addition to a folder alphavantage_data/, this script needs a folder price_data/ containing files daily_<symbol>.csv for each <symbol> queried in the file.
-One can create a sub-folder price_data/small_co/ and put daily_<symbol>.csv files there, for the small companies.
-Relative prices refer to (price of stock divided by price of DJIA).
+Assumptions are same as the one in visulaize_data.py
+Relative prices refer to Simple Moving Average (SMA) of closing prices.
 
 
 print_common_ips.py:
